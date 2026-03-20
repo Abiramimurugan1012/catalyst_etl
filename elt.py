@@ -9,7 +9,6 @@ df.drop_duplicates(inplace=True)
 df['Order Time'] = pd.to_datetime(df['Order Time'])
 
 
-
 engine = create_engine(
     "postgresql+psycopg2://postgres:12345@localhost:5432/order"
 )
